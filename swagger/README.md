@@ -6,8 +6,8 @@ To start the REST service:
     
 This is a simple implementation of MapReduce. Given a string, the *map* function will return each word in the string. The *reduce* function will return each unique word and the number of occurrences.
 
-map is at /map
-reduce it at /reduce
+Map is at /map.
+Reduce is at /reduce.
 
 map:
 
