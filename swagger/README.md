@@ -1,4 +1,4 @@
-#Swagger REST service for MapReduce
+# Swagger REST service for MapReduce
 
 To start the REST service:
 
