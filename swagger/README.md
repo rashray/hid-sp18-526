@@ -9,7 +9,7 @@ This is a simple implementation of MapReduce. Given a string, the *map* function
 map is at /map
 reduce it at /reduce
 
-In a new terminal:
+map:
 
     curl -H "Content-Type: application/json" \
     -X POST \
@@ -17,6 +17,8 @@ In a new terminal:
     http://localhost:8080/map
     
     > [["I", 1], ["I", 1], ["went", 1], ["to", 1], ["the", 1], ["the", 1], ["park", 1]]
+    
+reduce:
     
     curl -H "Content-Type: application/json" \
     -X POST \
