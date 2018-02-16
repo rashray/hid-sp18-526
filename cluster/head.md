@@ -14,6 +14,21 @@ Update:
 
 Credit goes to [Makezine](https://makezine.com/projects/build-a-compact-4-node-raspberry-pi-cluster/)
 
+Change **/etc/network/interfaces** to:
+
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+allow-hotplug eth0
+iface eth0 inet static
+  address 192.168.50.1
+  netmask 255.255.255.0
+  network 192.168.50.0
+  broadcast 192.168.50.255
+```
+
 Install:
 
     sudo apt-get install isc-dhcp-server
