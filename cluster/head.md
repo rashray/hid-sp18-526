@@ -38,7 +38,7 @@ group {
    option domain-name "cluster";
    option domain-name-servers 8.8.8.8, 8.8.4.4;
    subnet 192.168.50.0 netmask 255.255.255.0 {
-      range 192.168.50.14 192.168.50.250;
+      range 192.168.50.15 192.168.50.250;
 
       host rp0 {
          hardware ethernet (MAC address);
