@@ -25,6 +25,14 @@ Enter new password via prompts.
 
 rp0 - rp4
 
+This can be done on the command line using:
+
+    sudo raspi-config
+    
+Or by going to preferences -> ???
+
+Or by modifying **/etc/hostname**
+
 ### Setup hosts
 
 For each node, change **/etc/hosts** to:
