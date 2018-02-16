@@ -10,7 +10,7 @@ Each cluster consists of:
 ### Flash Raspbian
 
 1. Download Raspbian image [here](https://www.raspberrypi.org/downloads/).
-2. Download Etcher here [here](https://etcher.io/).
+2. Download Etcher [here](https://etcher.io/).
 3. Using Etcher, flash Raspbian onto SD card.
 
 ### Change password
@@ -27,7 +27,8 @@ rp0 - rp4
 
 ### Setup hosts
 
-Change **/etc/hosts** to:
+For each node, change **/etc/hosts** to:
+
 ```
 127.0.0.1 localhost
 ::1 localhost ip6-localhost ip6-loopback
@@ -43,6 +44,7 @@ ff02::2 ip6-allrouters
 192.168.50.12   rp2 rp2.local rp2.lan rp2.cluster
 192.168.50.13   rp3 rp3.local rp3.lan rp3.cluster
 192.168.50.14   rp4 rp4.local rp4.lan rp4.cluster
+```
 
 ### SSH
 
