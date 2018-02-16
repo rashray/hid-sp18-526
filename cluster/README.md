@@ -2,7 +2,7 @@
 
 Each cluster consists of:
 
-- 1 head node ([setup](head.md))
+- 1 head node ([setup](head.md)) (recommend following the instructions here first for each node and gather the MAC addresses before configuring head node)
 - 4 compute nodes ([setup](compute.md)) 
 
 ## Configuration
