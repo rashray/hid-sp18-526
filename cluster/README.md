@@ -23,13 +23,19 @@ Enter new password via prompts.
 
 ### Change hostnames
 
-rp0 - rp4
+Change hostnames (in descending order).
+
+1. rp0
+2. rp1
+3. rp2
+4. rp3
+5. rp4
 
 This can be done on the command line using:
 
     sudo raspi-config
     
-Or by going to preferences -> ???
+Or on the desktop by going to Menu -> Preferences -> Raspbery PI Configuration
 
 Or by modifying **/etc/hostname**
 
