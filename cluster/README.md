@@ -35,7 +35,7 @@ This can be done on the command line using:
 
     sudo raspi-config
     
-Or on the desktop by going to Menu -> Preferences -> Raspbery PI Configuration
+Or on the desktop by going to Menu -> Preferences -> Raspbery Pi Configuration
 
 Or by modifying **/etc/hostname**
 
@@ -61,6 +61,10 @@ ff02::2 ip6-allrouters
 ```
 
 ### SSH
+
+Enabled by placing empty "ssh" file onto boot partition.
+
+Or Menu -> Preferences -> Raspberry Pi Configuration
 
 (to-do)
 
