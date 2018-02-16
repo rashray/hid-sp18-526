@@ -33,7 +33,7 @@ Install:
 
     sudo apt-get install isc-dhcp-server
     
-Change **/etc/dhcp/dhcpd.conf** to (inserting MAC address):
+Change **/etc/dhcp/dhcpd.conf** to:
 
 ```
 ddns-update-style none;
@@ -83,7 +83,9 @@ group {
 }
 ```
 
-This assigns static IPs to each node.
+This assigns static IPs to each node. You need to insert the MAC addresses manually. They can be obtained from each node with:
+
+    cat /sys/class/net/eth0/address
 
 Change **/etc/default/isc-dhcp-server** to:
 
