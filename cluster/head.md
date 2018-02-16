@@ -4,12 +4,6 @@ Your head node will give you access to your compute nodes.
 
 ## Configuration
 
-### Flash Raspbian
-
-1. Download Raspbian image [here](https://www.raspberrypi.org/downloads/).
-2. Download Etcher here [here](https://etcher.io/).
-3. Using Etcher, flash Raspbian onto SD card.
-
 ### Update
 
 Update:
