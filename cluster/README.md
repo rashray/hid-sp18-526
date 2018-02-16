@@ -13,6 +13,12 @@ Each cluster consists of:
 2. Download Etcher [here](https://etcher.io/).
 3. Using Etcher, flash Raspbian onto SD card.
 
+### Keyboard Layout
+
+The default keyboard layout may need to be changed to US.
+
+Menu -> Preferences -> Mouse and Keyboard Settings -> Keyboard tab -> Variant -> English (US)
+
 ### Change password
 
 Change password:
