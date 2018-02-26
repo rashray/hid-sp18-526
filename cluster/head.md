@@ -4,7 +4,7 @@ Your head node will give you access to your compute nodes.
 
 ## Setup
 
-The setup script will install dnsmasq for DNS/DHCP server and Cluster SSH. Cluster SSH will allow commands to be issued to one/all of the compute nodes at the same time.
+The setup script will install dnsmasq for DNS/DHCP server and Cluster SSH. It will also configure the iptables to allow the compute nodes to access the internet through the head node.
 
 Run setup script:
 
