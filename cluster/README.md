@@ -2,7 +2,7 @@
 
 Each cluster consists of:
 
-- 1 head node ([setup](head.md)) (recommend following the instructions here first)
+- 1 head node ([setup](/head)) (recommend following the instructions here first)
 - 4 compute nodes
 
 ## Configuration
