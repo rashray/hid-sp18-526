@@ -34,8 +34,3 @@ iptables-save > /etc/iptables/rules.v4
 
 ###TODO SSH keys
 ###TODO update, install software
-
-
-
-
-
