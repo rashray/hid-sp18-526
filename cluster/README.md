@@ -48,3 +48,15 @@ Or by modifying **/etc/hostname**
 ### Configure Head Node
 
 Follow instructions [here](head)
+
+### SSH
+
+Generate SSH keys:
+
+    ssh-keygen -t rsa
+    
+Copy key to each node:
+
+    ssh-copy-id <hostname>
+    
+For hostnames rp1-4.
