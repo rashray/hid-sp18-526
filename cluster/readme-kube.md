@@ -1,6 +1,4 @@
-# 524 Raspberry Pi Cluster
-
-## Authors
+# Raspberry Pi Cluster
 
 - Tim Whitson @whitstd
 - Juliano Gianlupi @JulianoGianlupi
