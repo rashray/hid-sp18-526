@@ -1,4 +1,4 @@
-# Raspberry Pi SSH Cluster
+# Raspberry Pi Kubernetes Cluster
 
 - Tim Whitson @whitstd
 - Juliano Gianlupi @JulianoGianlupi
