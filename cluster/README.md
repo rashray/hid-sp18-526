@@ -2,8 +2,8 @@
 
 ## Authors
 
-Tim Whitson @whitstd
-Juliano Gianlupi @JulianoGianlupi
+- Tim Whitson @whitstd
+- Juliano Gianlupi @JulianoGianlupi
 
 ## Hardware
 
