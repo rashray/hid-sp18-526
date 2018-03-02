@@ -1,5 +1,10 @@
 # 524 Raspberry Pi Cluster
 
+## Authors
+
+Tim Whitson @whitstd
+Juliano Gianlupi @JulianoGianlupi
+
 Each cluster consists of:
 
 - 1 head node ([setup](head)) (recommend following the instructions here first)
