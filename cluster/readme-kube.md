@@ -14,8 +14,8 @@ Each cluster consists of:
 
 ### Flash Raspbian
 
-1. Download Raspbian image [here](https://www.raspberrypi.org/downloads/).
-2. Download Etcher [here](https://etcher.io/).
+1. Download Raspbian image <https://www.raspberrypi.org/downloads/>.
+2. Download Etcher <https://etcher.io/>.
 3. Using Etcher, flash Raspbian onto SD card.
 
 ### Keyboard Layout
