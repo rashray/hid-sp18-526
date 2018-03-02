@@ -51,6 +51,8 @@ Follow instructions [here](head)
 
 ### SSH
 
+**Note: Gregor says this is not best practice**
+
 Generate SSH keys:
 
     ssh-keygen -t rsa
