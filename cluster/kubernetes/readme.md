@@ -31,7 +31,7 @@ rebooted.
 
 All of the above needs to be done in each node aswell. The script
 copy_dk_kub_install_script_to_nodes.sh should copy the needed script to each of 
-them and run it. It is set up to work with 4 nodes named rp<number> with pi as 
+them and run it. It is set up to work with 4 nodes named rp\<number\> with pi as 
 the username (the numbers start at 1 because the head node is rp0). Changing 
 the number of nodes is trivial, if all of your nodes have the same username it 
 is also trivial.
