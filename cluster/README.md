@@ -5,6 +5,8 @@
 Tim Whitson @whitstd
 Juliano Gianlupi @JulianoGianlupi
 
+## Hardware
+
 Each cluster consists of:
 
 - 1 head node ([setup](head)) (recommend following the instructions here first)
