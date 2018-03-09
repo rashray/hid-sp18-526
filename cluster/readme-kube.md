@@ -1,4 +1,9 @@
-# 524 Raspberry Pi Cluster
+# Raspberry Pi Kubernetes Cluster
+
+- Tim Whitson @whitstd
+- Juliano Gianlupi @JulianoGianlupi
+
+## Hardware
 
 Each cluster consists of:
 
@@ -9,8 +14,8 @@ Each cluster consists of:
 
 ### Flash Raspbian
 
-1. Download Raspbian image [here](https://www.raspberrypi.org/downloads/).
-2. Download Etcher [here](https://etcher.io/).
+1. Download Raspbian image <https://www.raspberrypi.org/downloads/>.
+2. Download Etcher <https://etcher.io/>.
 3. Using Etcher, flash Raspbian onto SD card.
 
 ### Keyboard Layout
@@ -48,3 +53,17 @@ Or by modifying **/etc/hostname**
 ### Configure Head Node
 
 Follow instructions [here](head)
+
+### SSH
+
+**Note: Gregor says this is not best practice**
+
+Generate SSH keys:
+
+    ssh-keygen -t rsa
+    
+Copy key to each node:
+
+    ssh-copy-id <hostname>
+    
+For hostnames rp1-4.
