@@ -1,0 +1,46 @@
+---
+swagger: "2.0"
+info:
+  title: Cloudmesh MapReduce
+  version: "0.0.1"
+consumes:
+  - application/json
+produces:
+  - application/json
+
+paths:
+  /map:
+    post:
+      description: Map input
+      operationId: do_map
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "Mapped"
+          
+      #parameters:
+      #  - name: data
+      #    description: Data to be mapped.
+      #    in: body
+      #    type: string
+      #    required: true
+      
+  /reduce:
+    post:
+      description: Reduce input
+      operationId: do_reduce
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "Reduced"
+          
+      #parameters:
+      #  - name: data
+      #    description: Data to be reduced.
+      #    in: body
+      #    type: string
+      #    required: true
+        
+
