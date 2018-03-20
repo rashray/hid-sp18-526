@@ -22,7 +22,8 @@ Each cluster consists of:
 
 The default keyboard layout may need to be changed to US.
 
-Menu -> Preferences -> Mouse and Keyboard Settings -> Keyboard tab -> Variant -> English (US)
+Menu -> Preferences -> Mouse and Keyboard Settings -> Keyboard tab -> Variant ->
+ English (US)
 
 ### Change password
 
