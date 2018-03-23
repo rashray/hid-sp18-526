@@ -95,6 +95,7 @@ To update Cluster SSH configuration, add the following to **/etc/clusters**:
 #### NAT Forwarding
 
 To Setup NAT Forwarding, uncomment ipv4 fowarding:
+
     sed -i -e "/net.ipv4.ip_forward=1/s/^#//" /etc/sysctl.conf
     
 #### IP Tables
