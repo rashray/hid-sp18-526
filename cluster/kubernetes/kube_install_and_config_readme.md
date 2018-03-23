@@ -12,13 +12,14 @@ very strait foward.
 ### Disable swap memory
 Docker has an issue (in my opinion sever) in that it is **not compatible with 
 SWAP memory**, therefore it is neeeded to disable it. This might create some 
-issues, if you encounter them you should change line 16 in the script from
+issues, if you encounter them you should try to rebbot the cluster again, if 
+that fails change line 16 in the script from
 
-orig="$(head -n1 /boot/cmdline.txt) cgroup_enable=cpuset cgroup_memory=memory"
+orig="$(head -n1 /boot/cmdline.txt) cgroup_enable=cpuset cgroup_memory=1"
 
 to
 
-orig="$(head -n1 /boot/cmdline.txt) cgroup_enable=cpuset cgroup_memory=1"
+orig="$(head -n1 /boot/cmdline.txt) cgroup_enable=cpuset cgroup_memory=memory"
 
 ### Installing kubernetes administrator
 
@@ -31,10 +32,11 @@ rebooted.
 
 All of the above needs to be done in each node aswell. The script
 copy_dk_kub_install_script_to_nodes.sh should copy the needed script to each of 
-them and run it. It is set up to work with 4 nodes named rp<number> with pi as 
+them and run it. It is set up to work with 4 nodes named rp\<number\> with pi as 
 the username (the numbers start at 1 because the head node is rp0). Changing 
 the number of nodes is trivial, if all of your nodes have the same username it 
 is also trivial.
 
 If your nodes are not configured like that you'll need to change 
 this script or copy docker_kubernetes_install.sh to each of the nodes manually.
+We plan on making this script independent on the number of nodes.
