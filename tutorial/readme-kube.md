@@ -1,7 +1,7 @@
 # Raspberry Pi Kubernetes Cluster
 
-- Tim Whitson @whitstd
-- Juliano Gianlupi @JulianoGianlupi
+- Tim Whitson @whitstd (hid-sp18-526)
+- Juliano Gianlupi @JulianoGianlupi (hid-sp18-601)
 
 ## Hardware
 
@@ -94,9 +94,9 @@ To update Cluster SSH configuration, add the following to **/etc/clusters**:
 
 #### NAT Forwarding
 
-To Setup NAT Forwarding, uncomment ipv4 fowarding:
+To Setup NAT Forwarding, uncomment the following line in **/etc/sysctl.conf**:
 
-    sed -i -e "/net.ipv4.ip_forward=1/s/^#//" /etc/sysctl.conf
+    net.ipv4.ip_forward=1
     
 #### IP Tables
 
