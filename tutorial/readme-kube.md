@@ -3,6 +3,10 @@
 - Tim Whitson @whitstd (hid-sp18-526)
 - Juliano Gianlupi @JulianoGianlupi (hid-sp18-601)
 
+## Note
+
+This tutorial is for Raspbian Stretch.
+
 ## Hardware
 
 Each cluster consists of:
