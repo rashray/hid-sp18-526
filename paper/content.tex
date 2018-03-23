@@ -1,0 +1,153 @@
+% status: 0
+% chapter: TBD
+
+\title{Synthetic Data Vault}
+
+\author{Tim Whitson}
+\affiliation{%
+  \institution{Indiana University}
+  \streetaddress{Smith Research Center}
+  \city{Bloomington}
+  \state{IN}
+  \postcode{47408}
+  \country{USA}
+}
+\email{tdwhitso@indiana.edu}
+
+% The default list of authors is too long for headers}
+\renewcommand{\shortauthors}{T. Whitson}
+
+\begin{abstract}
+Synthetic data solves the problems of a lack of data or a lack of access to
+data. Synthetic Data Vault (SDV), which was developed in 2016 at MIT, is the
+premier technology in synthetic data generation. Here, we explore SDV ---
+why it is necessary, how it generates data, and how to use the synthetic
+data. %FIXME: improve
+\end{abstract}
+
+\keywords{hid-sp18-526, machine learning, synthetic data}
+
+\maketitle
+
+\section{Introduction}
+
+Data analysis has changed the landscape of business and research. All data
+has a story, and data scientists are tasked with telling that story. However,
+what if the data is inaccessible to the data scientists? Are they out of
+luck or is it possible to create data that is still actionable?
+
+The solution to this problem is synthetic data. Synthetic data can be generated
+to look like real data. In the same way that predictions can be made using
+existing data, synthetic data can be generated. While it may seem illogical,
+synthetic data can also be analyzed and used to train models.
+
+The most notable synthetic data generator is the Synthetic Data Vault
+(SDV). Developed at MIT, the Synthetic Data Vault uses machine learning
+techniques to model relational tables. The models can then be used to generate
+entirely synthetic tables which are true to the form of the originals.\cite{}
+%FIXME: citation
+
+\section{Why Synthetic Data?}
+
+Data science and analysis has driven industry to new areas never before
+explored. One look at Kaggle or DrivenData shows the usefulness and value
+that data provides organizations who nourish it. However, organizations
+also face hurdles with their data (or lack thereof). Consider healthcare
+companies or defense contractors with highly sensitive data that cannot
+be shared publicly. Also consider small businesses who don't possess the
+knowledge or manpower to collect real data.
+
+Assuming that synthetic data is as insightful as real data, these organizations
+would all benefit from synthetic data. In the seminal work for SDV, Neha
+Patki outlines two motivations for using synthetic data: ``populating
+sample databases'' and ``Scaling Data Science Efforts''\cite{}. Consider,
+for example, a company using a Kaggle competition to gain insight into their
+data. The company cannot release real data on their users due to privacy
+concerns. This is one example amongst many where synthetic data solves the
+issue of data availablity (or scaled efforts, as more data scientists can
+now access the data). %FIXME: citation incomplete
+
+\subsection{Privacy}
+
+Whether for business reasons or privacy issues, most data is sensitive. Any
+attempt at a public display of data could lead to a loss of revenue, lawsuits,
+damage to national security, etc. Synthetic data sticks to the structure
+of the original data without any real-world underpinning. So patient data,
+for example, could be generated and used by businesses and researchers to
+improve patient outcome without any of the pitfalls or added steps of using
+real patient data. With the modern climate, user privacy is taken very
+seriously and SDV provides a solution to keeping data private. %FIXME: citation
+
+\section{Generating Synthetic Data}
+
+The first step in synthetic data analysis is to generate the data. The SDV
+accomplishes this task using machine learning. First, the natural data is
+analyzed and modeled. Then, the models are used to generate the synthetic
+data. The benefit of machine learning is that the models are able to recreate
+realistic synthetic data points.
+
+Most data that would be synthetically modeled sits in a database. Therefore,
+SDV works specifically with relational tables inside databases. By analyzing
+each column, or feature, of the data, SDV can accurately generate unique data
+that conforms to the original. Each numerical row, for example, has a min,
+max, mean, etc. which will continue to be followed.
+
+Take, for example, a database filled with hospital patient data. Due to
+the private nature of health data, analysts might not have access to the
+data. However, a synthetic recreation of the data is possible, which would be
+perfectly useable for analysis. Suppose there are fields for ``height'' and
+``weight''. These features have a relationship, positive correlation, which
+would be captured by the machine learning algorithm. Also suppose height is
+normally distributed. Combine all of these factors together and a normal
+distribution of heights could be generated with matching weights. While
+this example is oversimplified, it shows that synthetically-generated data
+is far more than just random data.
+
+\subsection{Process}
+
+First, the user must give a type for each column. ID columns, for example,
+are crucial to the generation of new data because they often times are used
+as foreign keys in other tables. Any other formatting will also need to be
+supplied, such as datetimes. Custom formatting can be supplied via regex.
+
+Next, SDV ``learns'' the database. The tables, and relationship between the
+tables, is modeled. With this step, SDV can accurately recreate not only
+the information within the database, but its structure as well.
+
+Finally, the data is synthesized. Tables can be synthesized and their child
+(dependent) tables can be synthesized as well. Here, the user also has the
+option of viewing the model of the database.
+
+%FIXME: image: model pg. 33 from paper
+
+\section{Use of Synthetic Data}
+
+The use of synthetic data goes beyond privacy concerns. As Patki stated,
+one use of the SDV is for ``Populating Sample Databases''\cite{}. Data
+scientists can generate as much, or as little, data as is necessary. More
+data can be generated than currently exists in the original database to
+further test scaling.
+
+%FIXME: citation incomplete
+
+The flexibility of SDV is one of its greatest advantages. Instead of requiring
+storage of or access to an entire database, all data scientists need are the
+models. From those models, they can generate whatever they need to work with.
+
+\subsection{Accuracy}
+
+Synthetic data would not be very useful if it could not take the place of real
+data during analysis. In the sample study behind the project, Patki gave both
+real and synethesized data to data scientists to run analysis on. The results,
+albeit with a small sample, show no statistically significant difference
+between real and synthesized data in predictive modeling. Therefore, it can
+be tentatively concluded that synthetic data can be used for analysis in
+lieu of real data. \cite{}
+
+%FIXME: citation incomplete
+
+\section{Conclusion}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{report}
+

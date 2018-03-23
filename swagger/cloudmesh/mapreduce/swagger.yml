@@ -12,7 +12,7 @@ paths:
   /map:
     post:
       description: Map input
-      operationId: mapreduce.do_map
+      operationId: do_map
       produces:
         - "application/json"
       responses:
@@ -29,7 +29,7 @@ paths:
   /reduce:
     post:
       description: Reduce input
-      operationId: mapreduce.do_reduce
+      operationId: do_reduce
       produces:
         - "application/json"
       responses:

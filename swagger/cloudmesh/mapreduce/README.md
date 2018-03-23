@@ -1,8 +1,12 @@
-# Swagger REST service for MapReduce
+# Swagger MapReduce Server
 
-To start the REST service:
+To generate swagger service:
 
-    python run.py
+    make
+    
+To run swagger service:
+    
+    make run
     
 This is a simple implementation of MapReduce. Given a string, the *map* function will return each word in the string. The *reduce* function will return each unique word and the number of occurrences.
 
@@ -26,5 +30,3 @@ reduce:
     http://localhost:8080/reduce
     
     > {"I": 2, "to": 1, "went": 1, "park": 1, "the": 2}
-    
-    
