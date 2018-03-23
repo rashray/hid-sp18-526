@@ -1,4 +1,4 @@
-# This is a in depth exaplanion of the kubernetes installation and configuration scripts
+## This is a in depth exaplanion of the kubernetes installation and configuration scripts
 
 
 First docker needs to be installed
@@ -30,7 +30,7 @@ Now kubernetes admin will be installed
       sudo apt-get install -qy kubeadm
     sudo reboot 
 
-# On the nodes
+### On the nodes
 
 Docker and kubernetes need to be installed on the nodes, as well as the SWAP 
 memory needs to be disabled. This is handled by another script that simply 
