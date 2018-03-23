@@ -1,5 +1,4 @@
-# This is a in depth exaplanion of the kubernetes installation and 
-#configuration scripts
+# This is a in depth exaplanion of the kubernetes installation and configuration scripts
 
 
 First docker needs to be installed
@@ -45,3 +44,5 @@ copies the installation script to the nodes and runs it.  First copy the script
     exit 0
 
 Now the installation script will be run on the nodes using cssh
+
+    cssh -a "sh docker_kubernites_install.sh"
