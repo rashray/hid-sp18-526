@@ -35,4 +35,13 @@ Now kubernetes admin will be installed
 
 Docker and kubernetes need to be installed on the nodes, as well as the SWAP 
 memory needs to be disabled. This is handled by another script that simply 
-copies the installation script to the nodes and runs it.  
+copies the installation script to the nodes and runs it.  First copy the script
+
+    for number in {1..4}
+	    do 
+		    scp /home/pi/docker_kubernites_install.sh \
+			    pi@rp$number:/home/pi/docker_kubernites_install.sh
+	    done
+    exit 0
+
+Now the installation script will be run on the nodes using cssh
