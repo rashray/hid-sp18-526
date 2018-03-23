@@ -10,16 +10,16 @@ In order to install kubernetes you first need to have docker installed. This is
 very strait foward.
 
 ### Disable swap memory
-Docker has an issue (in my opinion sever) in that it is **not compatible with 
+Docker has an issue (in my opinion severe) in that it is **not compatible with 
 SWAP memory**, therefore it is neeeded to disable it. This might create some 
 issues, if you encounter them you should try to rebbot the cluster again, if 
 that fails change line 16 in the script from
 
-orig="$(head -n1 /boot/cmdline.txt) cgroup_enable=cpuset cgroup_memory=1"
+    orig="$(head -n1 /boot/cmdline.txt) cgroup_enable=cpuset cgroup_memory=1"
 
 to
 
-orig="$(head -n1 /boot/cmdline.txt) cgroup_enable=cpuset cgroup_memory=memory"
+    orig="$(head -n1 /boot/cmdline.txt) cgroup_enable=cpuset cgroup_memory=memory".
 
 ### Installing kubernetes administrator
 
@@ -39,4 +39,3 @@ is also trivial.
 
 If your nodes are not configured like that you'll need to change 
 this script or copy docker_kubernetes_install.sh to each of the nodes manually.
-We plan on making this script independent on the number of nodes.
