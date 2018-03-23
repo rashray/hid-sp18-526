@@ -40,7 +40,7 @@ is also trivial.
 If your nodes are not configured like that you'll need to change 
 this script or copy docker_kubernetes_install.sh to each of the nodes manually.
 
-## This is a in depth exaplanion of the kubernetes installation and configuration scripts
+## Now some more explanations on the scripts
 
 
 First docker needs to be installed
