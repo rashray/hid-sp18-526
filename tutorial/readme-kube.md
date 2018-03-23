@@ -127,6 +127,6 @@ To update Cluster SSH configuration, add the following to **/etc/clusters**:
 
     rpcluster rp1 rp2 rp3 rp4
 
-Now you can run commands to all clusters through by:
+Now you can run commands to all clusters by:
 
     cssh rpcluster
