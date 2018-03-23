@@ -111,7 +111,7 @@ Make rules permanent:
 
     iptables-save > /etc/iptables/rules.v4
 
-### SSH
+### SSH Configuration
 
 **Note: Gregor says this is not best practice**
 
