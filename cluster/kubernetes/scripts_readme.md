@@ -25,8 +25,14 @@ with cgroup_enable=memory.
 Now kubernetes admin will be installed 
 
 
-    curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add - && \
+    curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add - &&\
       echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list && \
       sudo apt-get update -q && \
       sudo apt-get install -qy kubeadm
     sudo reboot 
+
+# On the nodes
+
+Docker and kubernetes need to be installed on the nodes, as well as the SWAP 
+memory needs to be disabled. This is handled by another script that simply 
+copies the installation script to the nodes and runs it.  
