@@ -115,11 +115,11 @@ Generate SSH keys:
 
     ssh-keygen -t rsa
     
-Copy key to each node:
+Copy key to each compute node:
 
     ssh-copy-id <hostname>
     
-For hostnames rp1-4.
+For hostnames rp1-4 (final node names will be: rp0, rp1, rp2, rp3, rp4).
 
 ### Configure Cluster SSH
 
