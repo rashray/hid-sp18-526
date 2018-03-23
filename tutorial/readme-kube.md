@@ -87,11 +87,7 @@ To update DNS configuration, add the following to **/etc/dhcpd.conf**
     interface=wlan0
 
     dhcp-range=eth0, 192.168.50.1, 192.168.50.250, 24h
-
-To update Cluster SSH configuration, add the following to **/etc/clusters**:
-
-    rpcluster rp1 rp2 rp3 rp4
-
+    
 #### NAT Forwarding
 
 To Setup NAT Forwarding, uncomment the following line in **/etc/sysctl.conf**:
@@ -124,3 +120,13 @@ Copy key to each node:
     ssh-copy-id <hostname>
     
 For hostnames rp1-4.
+
+### Configure Cluster SSH
+
+To update Cluster SSH configuration, add the following to **/etc/clusters**:
+
+    rpcluster rp1 rp2 rp3 rp4
+
+Now you can run commands to all clusters through by:
+
+    cssh rpcluster
