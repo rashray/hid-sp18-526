@@ -1,0 +1,78 @@
+% status: 5
+% chapter: TBD
+
+\title{CMENV: A Cloudmesh Virtual Environment}
+
+\author{Tim Whitson}
+\affiliation{%
+  \institution{Indiana University}
+  \streetaddress{Smith Research Center}
+  \city{Bloomington}
+  \state{IN}
+  \postcode{47408}
+  \country{USA}}
+\email{tdwhitso@indiana.edu}
+
+\author{Gregor von Laszewski}
+\affiliation{%
+  \institution{Indiana University}
+  \streetaddress{Smith Research Center}
+  \city{Bloomington}
+  \state{IN}
+  \postcode{47408}
+  \country{USA}}
+\email{laszewski@gmail.com}
+
+% The default list of authors is too long for headers}
+\renewcommand{\shortauthors}{T. Whitson}
+
+\begin{abstract}
+Cloudmesh allows users to manage multiple cloud environments with a simple
+command-line interface. Many modern cloud technologies also incorporate REST
+APIs into their infrastructure. Therefore, Cloudmesh must adapt. In this
+paper, we propose a new Cloudmesh computing environment, \textit{cmenv},
+where multiple services are configured and combined into a single REST API.
+\end{abstract}
+
+\keywords{hid-sp18-526, cloudmesh, rest, flasger, swagger}
+
+\maketitle
+
+\section{Introduction}
+
+The modern business/research environment for crunching large datasets is
+in the cloud. In most cases, numerous cloud environments are necessary for
+each project. Currently, there exist few tools for managing multiple cloud
+environments. Cloudmesh Client is a management tool for multiple cloud
+environments. Currently, Cloudmesh uses a customized command shell, cmd5,
+to issue commands to the Cloudmesh Client.
+
+%FIXME: cite Cloudmesh
+
+We propose replacing Cloudmesh client and cmd5 with a Cloudmesh virtual
+environment. Each environment is instantiated from the command line and
+configured via a YAML file. The YAML file contains information about which
+services must be rendered, such as data store and key-value store.
+
+To interface with the virtual environment, a REST API will be created. To
+conform with OpenAPI standards, the REST service will be created in
+Flasgger/Swagger. The REST API reads from the configuration file to ensure
+that all requirements for the environment are met.
+
+%FIXME: cite OpenAPI, flasger
+
+\section{Configuration}
+
+\section{Virtual Machine Management}
+
+\section{Public Keys}
+
+\section{Key-Value Store}
+
+\section{Data Services}
+
+% cite
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{report}
+
