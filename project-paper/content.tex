@@ -1,7 +1,7 @@
 % status: 5
 % chapter: TBD
 
-\title{Deployable Cloudmesh Containers}
+\title{CMENV: Deployable Cloudmesh Containers}
 
 \author{Tim Whitson}
 \affiliation{%
@@ -26,8 +26,14 @@
 % The default list of authors is too long for headers}
 \renewcommand{\shortauthors}{T. Whitson}
 
+% program name (subject to change)
+\def \projectname {\textit{cmenv}}
+
 \begin{abstract}
-In order meet the needs of modern cloud computing environments, there is a need for flexible, language-independent computing resources. To meet this need, we present a modularized system of REST APIs housed within easily deployable Docker containers.
+In order meet the needs of modern cloud computing environments, there is a
+need for flexible, language-independent computing resources. To meet this
+need, we present \projectname, a modularized system of REST APIs housed
+within easily deployable Docker containers.
 \end{abstract}
 
 \keywords{hid-sp18-526, cloudmesh, rest, swagger}
@@ -36,7 +42,28 @@ In order meet the needs of modern cloud computing environments, there is a need 
 
 \section{Introduction}
 
-Docker is quickly becoming standard for software development and deployment within the cloud. According to the 2016 Docker Survey, 60\% of users deploy Docker as part of their ``cloud strategy''\cite{hid-sp18-526-docker-survey}.
+Docker is a program that provides containerization (virtualization
+within the operating system). Docker is quickly becoming standard for
+software development and deployment within the cloud. According to the
+2016 Docker Survey, 60\% of users deploy Docker as part of their ``cloud
+strategy''\cite{hid-sp18-526-docker-survey}.
+
+REST APIs are another crucial cloud component. In fact, many important software
+programs, such as Kubernetes, come with REST APIs built-in. An important
+benefit of REST APIs is that they are language-independent. All web languages
+have methods for interacting with, and creating, REST APIs. Therefore, REST
+APIs play a crucial role in \projectname. We will combine all required services
+into a single REST API that can be deployed easily within a Docker container.
+
+\section{OpenAPI}
+
+It is important, especially when working with modular systems, that all
+components of the system adhere to the same standard. For this project,
+we use OpenAPI. According to their website, OpenAPI ``defines a standard,
+programming language-agnostic interface description for REST APIs, which allows
+both humans and computers to discover and understand the capabilities of a
+service without requiring access to source code, additional documentation,
+or inspection of network traffic.''\cite{hid-sp18-526-openapi}
 
 \section{Configuration}
 
