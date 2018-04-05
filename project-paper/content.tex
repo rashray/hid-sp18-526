@@ -1,7 +1,7 @@
 % status: 5
 % chapter: TBD
 
-\title{CMENV: A Cloudmesh Virtual Environment}
+\title{Deployable Cloudmesh Containers}
 
 \author{Tim Whitson}
 \affiliation{%
@@ -27,43 +27,18 @@
 \renewcommand{\shortauthors}{T. Whitson}
 
 \begin{abstract}
-Cloudmesh allows users to manage multiple cloud environments with a simple
-command-line interface. Many modern cloud technologies also incorporate REST
-APIs into their infrastructure. Therefore, Cloudmesh must adapt. In this
-paper, we propose a new Cloudmesh computing environment, \textit{cmenv},
-where multiple services are configured and combined into a single REST API.
+In order meet the needs of modern cloud computing environments, there is a need for flexible, language-independent computing resources. To meet this need, we present a modularized system of REST APIs housed within easily deployable Docker containers.
 \end{abstract}
 
-\keywords{hid-sp18-526, cloudmesh, rest, flasger, swagger}
+\keywords{hid-sp18-526, cloudmesh, rest, swagger}
 
 \maketitle
 
 \section{Introduction}
 
-The modern business/research environment for crunching large datasets is
-in the cloud. In most cases, numerous cloud environments are necessary for
-each project. Currently, there exist few tools for managing multiple cloud
-environments. Cloudmesh Client is a management tool for multiple cloud
-environments. Currently, Cloudmesh uses a customized command shell, cmd5,
-to issue commands to the Cloudmesh Client.
-
-%FIXME: cite Cloudmesh
-
-We propose replacing Cloudmesh client and cmd5 with a Cloudmesh virtual
-environment. Each environment is instantiated from the command line and
-configured via a YAML file. The YAML file contains information about which
-services must be rendered, such as data store and key-value store.
-
-To interface with the virtual environment, a REST API will be created. To
-conform with OpenAPI standards, the REST service will be created in
-Flasgger/Swagger. The REST API reads from the configuration file to ensure
-that all requirements for the environment are met.
-
-%FIXME: cite OpenAPI, flasger
+Docker is quickly becoming standard for software development and deployment within the cloud. According to the 2016 Docker Survey, 60\% of users deploy Docker as part of their ``cloud strategy''\cite{hid-sp18-526-docker-survey}.
 
 \section{Configuration}
-
-\section{Virtual Machine Management}
 
 \section{Public Keys}
 
