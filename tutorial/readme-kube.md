@@ -53,7 +53,7 @@ This can be done on the command line using:
     
 Or on the desktop by going to Menu -> Preferences -> Raspbery Pi Configuration
 
-Or by modifying **/etc/hostname**
+Or by modifying **/etc/hostname** and **/etc/hosts**
 
 ### Configure Head Node
 
